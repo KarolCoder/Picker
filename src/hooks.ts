@@ -117,6 +117,7 @@ export const usePicker = () => {
           positiveText: 'Zapisz i przejdz dalej',
           onPositivePress: () => {
             onSaveButtonPress();
+            updateStep(newTabIndex);
             clearMessageOverlay();
           },
           onNegativePress: clearMessageOverlay,
